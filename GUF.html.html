@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Илюшка гуф</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        #capybara {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Гуфкоин</h1>
+
+    <img id="capybara" src="https://i.yapx.ru/Xo6i0.jpg"
+
+    <p>Гуфкоины: <span id="ionets">0</span></p>
+
+    <script>
+        let ionets = 0;
+        const ionetsDisplay = document.getElementById('ionets');
+        const capybara = document.getElementById('capybara');
+
+        capybara.addEventListener('click', () => {
+            ionets++;
+            ionetsDisplay.textContent = ionets;
+        });
+    </script>
+</body>
+</html>
